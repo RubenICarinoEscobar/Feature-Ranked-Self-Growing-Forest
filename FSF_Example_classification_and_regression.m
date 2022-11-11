@@ -21,7 +21,7 @@ X=cryotherapy_tot;
 
 %80% of dataset is used for training, and 20% for testing
 %Data is randomly partiotioned into training and testing subsets 
-obs=length(X);
+obs=length(class);
 rperm=randperm(obs);
 X=X(rperm,:);
 class=class(rperm,:);
@@ -73,7 +73,7 @@ X=yatchreg_tot;
 
 %80% of dataset is used for training, and 20% for testing
 %Data is randomly partiotioned into training and testing subsets 
-obs=length(X);
+obs=length(class);
 rperm=randperm(obs);
 X=X(rperm,:);
 class=class(rperm,:);
